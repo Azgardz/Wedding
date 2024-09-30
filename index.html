@@ -46,7 +46,7 @@
         <h1>Dimas & Ivana</h1>
         <p>Akan melangsungkan resepsi pernikahan dalam:</p>
         <div class="simply-countdown"></div>
-        <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()"
+        <a href="#welcome" class="btn btn-lg mt-4" onclick="enableScroll()"
           >Lihat Undangan</a
         >
       </main>
@@ -106,6 +106,29 @@
         </div>
       </div>
     </nav>
+
+    <section id="welcome" class="welcome">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="text-center">
+            <span>Sambutan</span>
+            <h2>Cinta dan Kebahagiaan</h2>
+            <p>Bismillahirrahmanirrahim</p>
+            <p>Assalamu'alaikum Warahmatullahi Wabarakatuh</p>
+            <br />
+            <p>
+              "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
+              pasangan-pasangan untukmu dari jenismu sendiri, agar kamu
+              cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di
+              antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu
+              benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kamu yang
+              berpikir
+            </p>
+            <p>(QS. Ar-Rum:21)</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="home" class="home">
       <div class="container">
@@ -570,7 +593,7 @@
       const urlParam = new URLSearchParams(window.location.search);
       const nama = urlParam.get("n") || "";
       const pronoun = urlParam.get("p") || "Bapak/Ibu/Saudara/i";
-      const namaContainer = document.querySelector(".hero h4 span");
+      const namaContainer = document.querySelector(".hero h4 span, .welcome");
       namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ",");
 
       document.querySelector("#nama").value = nama;
