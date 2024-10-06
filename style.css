@@ -61,6 +61,7 @@ body {
   color: white;
 }
 
+.start,
 .gallery,
 .rsvp,
 .gifts {
@@ -69,6 +70,7 @@ body {
   padding-bottom: 8rem;
 }
 
+.start span,
 .gallery span,
 .gifts span {
   text-transform: uppercase;
@@ -80,7 +82,8 @@ body {
 }
 
 .home h2,
-.welcome h2,
+.start h2,
+.end h2,
 .info h2,
 .gallery h2,
 .rsvp h2,
@@ -96,27 +99,6 @@ body {
 .gifts p {
   font-size: 1rem;
   font-weight: 300;
-}
-
-.welcome {
-  /* height: 60vh; */
-  padding: 10rem;
-  margin-top: 10rem;
-  margin-bottom: 8rem;
-}
-
-.welcome p {
-  font-size: 1.5rem;
-  font-family: cursive;
-}
-
-.welcome span {
-  text-transform: uppercase;
-  color: #666;
-  font-size: 1.1rem;
-  letter-spacing: 5px;
-  display: block;
-  margin-bottom: 1rem;
 }
 
 .mynavbar {
@@ -140,13 +122,27 @@ body {
   text-transform: uppercase;
 }
 
+.start {
+  background-color: white;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.start p {
+  font-size: 1.3rem;
+}
+
+.start .arab {
+  font-size: 2.2rem;
+}
+
 .home {
   background-image: url(img/background-home.png);
   background-size: cover;
   min-height: 100vh;
   margin-top: -6rem;
   padding-top: 7rem;
-  padding-bottom: 5rem;
+  padding-bottom: -5rem;
 }
 
 .home h3 {
@@ -193,6 +189,11 @@ body {
   margin: auto;
   color: var(--pink);
   font-size: 2rem;
+}
+
+.home .row-end {
+  margin-top: 8rem;
+  margin-bottom: 13rem;
 }
 
 .info {
