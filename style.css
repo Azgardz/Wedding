@@ -171,6 +171,7 @@ body {
 .home .couple img {
   max-width: 100%;
   height: auto;
+  /* -webkit-box-reflect: below; */
 }
 
 .home .heart {
